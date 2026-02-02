@@ -80,8 +80,11 @@ ROC-AUC Score: 0.9549
 
 <img width="666" height="547" alt="image" src="https://github.com/user-attachments/assets/183f3c6d-a579-41d3-a433-87bb9bf2d0a9" />
 
-### Things to do
->* I-JEPA has been known to be potentially learning the underlying biological structure without hand-crafted augmentations (like color jittering).  However, the end to end finetuning without data augmentation in one of the results above showed a significantly less accuracy (0.86 vs. 0.90, no statistical test).
->* We may have to retrain the model with a different set of hyperparameters.
+### Discussion 
+>* I-JEPA[1] has been known to be potentially learning the underlying biological structure without hand-crafted augmentations (like color jittering).  However in this preliminary work, the end to end finetuning without data augmentation showed a significantly less accuracy (0.86 vs. 0.90, no statistical test) compared to the one with data augmentation.  It is due to the fact that patchcamelyon is a specific domain dataset and somewhat limited in its scale.
+>* Data augmentation is a still critical step to help generating the max. performance of I-JEPA models.
+>* [Things to do] Explore the I-JEPA's performance with a dataset designed with a focus on a domain shift such as 'wltjr1007/Camelyon17-WILDS' available at HF with an extra label representing its origin institution.
 
+### References
+[1] Mahmoud Assran, Quentin Duval, Ishan Misra, Piotr Bojanowski, Pascal Vincent, Michael G. Rabbat, Yann LeCun, Nicolas Ballas, "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture", CVPR 2023, available [here](https://www.semanticscholar.org/paper/Self-Supervised-Learning-from-Images-with-a-Assran-Duval/ee57e4d7a125f4ca8916284a857c3760d7d378d3?utm_source=direct_link)
 
