@@ -13,7 +13,7 @@
 ## Results
 >* Visualization of Embeddings using t-sne<br>
 <img width="989" height="790" alt="image" src="https://github.com/user-attachments/assets/5b59911b-cd69-4216-b843-ab972a424908" />
->* Linear probe performance <br>
+>* Performance of Linear probe only <br>
 --- Classification Report ---
 precision    recall  f1-score   support
 
@@ -31,7 +31,7 @@ ROC-AUC Score: 0.9075
 -no data
 
 --------------------------------------
->* Non-linear probe performance <br>
+>* Performance of Non-linear probe only  <br>
 --- Classification Report ---
 
               precision    recall  f1-score   support
@@ -48,23 +48,24 @@ ROC-AUC Score: 0.9152
 <img width="666" height="547" alt="image" src="https://github.com/user-attachments/assets/2c7095f3-e205-4e79-8d2e-d94f1baf198a" />
 
 
->* **End to end finetuning performance with Data Augmentation**
+>* **Performance of End to End Finetuning with Data Augmentation**
 --- Classification Report ---
 
               precision    recall  f1-score   support
 
-       False       0.86      0.95      0.91     16391
-        True       0.95      0.85      0.90     16377
+       False       0.85      0.94      0.90     16391
+        True       0.94      0.84      0.89     16377
 
-    accuracy                           0.90     32768
-   macro avg       0.91      0.90      0.90     32768 <br>
-weighted avg       0.91      0.90      0.90     32768
+    accuracy                           0.89     32768
+   macro avg       0.90      0.89      0.89     32768 <br>
+weighted avg       0.90      0.89      0.89     32768 <br>
 
-ROC-AUC Score: 0.9659
+ROC-AUC Score: 0.9601
 
-<img width="666" height="547" alt="image" src="https://github.com/user-attachments/assets/95128b5f-f1c8-4c31-b2dc-f334623967e1" />
+<img width="666" height="547" alt="image" src="https://github.com/user-attachments/assets/218afd22-5317-439d-9b79-5f27062097d2" />
 
->* **End to end finetuning performance without Data Augmentation**
+
+>* **Performance of End to End Finetuning without Data Augmentation**
 --- Classification Report ---
 
               precision    recall  f1-score   support
